@@ -9,4 +9,6 @@ accounts-facebook
 tsega:bootstrap3-datetimepicker
 accounts-password
 accounts-ui-bootstrap-3
+houston:admin
+iron:router
 

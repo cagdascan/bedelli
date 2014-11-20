@@ -1,10 +1,12 @@
  <template name="bedellidurum">
   <div class="bedellidurum col-md-3">
 
+
+
+  {{#if sessionBedelliDurumu}}
   <h3 style="color:red">
     Bedelli Durumu
   </h3>
-
   <table style="width:100%;">
     <tr>
       <th>Bedelli çıktı mı?</th>
@@ -13,18 +15,46 @@
 
     <tr>
       <th>Tahmini Yaş</th>
-      <th>25</th>
+      <th>{{tahminiYas}}</th>
     </tr>
 
     <tr>
       <th>Tahmini Çıkış Tarihi</th>
-      <th>14/20/2014</th>
+      <th>{{tahminiCikisTarihi}}</th>
     </tr>
     <tr>
       <th>Tahmini Ücret</th>
-      <th>25.000TL</th>
+      <th>{{tahminiUcret}}</th>
     </tr>
   </table>
+
+
+  {{else}}
+  <h3 style="color:green">
+    Bedelli Durumu
+  </h3>
+  <table style="width:100%;">
+    <tr>
+      <th>Bedelli çıktı mı?</th>
+      <th>Evet</th>
+    </tr>
+
+    <tr>
+      <th>Kesin Yaş</th>
+      <th>{{kesinYas}}</th>
+    </tr>
+
+    <tr>
+      <th>Kesinleşmiş Doğum Tarihi</th>
+      <th>{{kesindogumtarihi}}</th>
+    </tr>
+    <tr>
+      <th>Kesin Ücreti</th>
+      <th>{{kesinUcret}}</th>
+    </tr>
+  </table>
+  {{/if}}
+  
 
   </div>
 </template>
