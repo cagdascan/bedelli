@@ -16,8 +16,16 @@ Template.hesaplama.rendered = function() {
         // var umut = Degerler.findOne().tahminiDogumTarihi.split('/');
         // console.log(umut); 
 
+        if (Degerler.find().fetch()[0].bedelliDurumu==0) {
+            var bedelliYasiTarihi = Degerler.find().fetch()[0].tahminiDogumTarihi.split('/');
 
-    	var bedelliYasiTarihi=["15","01","1987"];
+        }
+        else if (Degerler.find().fetch()[0].bedelliDurumu==1) {
+            var bedelliYasiTarihi = Degerler.find().fetch()[0].kesinDogumTarihi.split('/');
+
+        }
+
+        console.log(bedelliYasiTarihi);
 
 
 
@@ -35,7 +43,6 @@ Template.hesaplama.rendered = function() {
 			$('#durum').css('color','green');
 		}
 		else {
-			console.log('tutmadi');
 			$('#durum').html('Bedelli Tutmadı :(');
 			$('#durum').css('color','red');
 
