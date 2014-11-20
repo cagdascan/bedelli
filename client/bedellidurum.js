@@ -2,7 +2,7 @@
 
 Template.bedellidurum.helpers({
 	'sessionBedelliDurumu': function(){
-		var bd = Degerler.findOne().bedelliDurumu;
+		var bd = degerler.findOne().bedelliDurumu;
 
 		if(bd==0){
 	Session.set('sessionBedelliDurumu',true);

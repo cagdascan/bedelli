@@ -12,7 +12,11 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">Bedelli çıktı mı? </span>
-	  <span class="navbar-brand" style="color:red;">Hayır!</span>
+      {{#if evetHayir}}
+      <span class="navbar-brand" style="color:green;">Evet!</span>
+      {{else}}
+	   <span class="navbar-brand" style="color:red;">Hayır!</span>
+    {{/if}}
 	  <span class="navbar-brand" >&nbsp;&nbsp;&nbsp; </span>
     </div>
 

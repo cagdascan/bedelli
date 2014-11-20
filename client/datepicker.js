@@ -13,7 +13,13 @@ Template.hesaplama.rendered = function() {
 		var gun= $('.datetimepicker').data("DateTimePicker").viewDate._i.d;
     	var yil= $('.datetimepicker').data("DateTimePicker").viewDate._i.y;
 
+        // var umut = Degerler.findOne().tahminiDogumTarihi.split('/');
+        // console.log(umut); 
+
+
     	var bedelliYasiTarihi=["15","01","1987"];
+
+
 
     	if ((bedelliYasiTarihi[2]-yil>0)) {
     		$('#durum').html('Bedelli Tuttu! :)');
