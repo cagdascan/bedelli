@@ -1,0 +1,27 @@
+<template name="layout">
+	{{> ustmenu}}
+	<div class="container">
+		<div class="row">
+			<div class="col-md-9">
+				{{#if sessionUstobje}}
+					{{> ustobje}}
+				{{else}}
+					{{> hesaplama}}
+				{{/if}}
+			</div>
+
+			<div class="col-md-3">
+				{{> bedellidurum}}
+			</div>
+		</div>
+
+		<div class="col-md-9 separate2"></div>
+
+		<div class="row">	
+			{{> haber}}
+			{{> haber}}
+			{{> haber}}
+			{{> haber}}
+		</div>
+	</div>
+</template>

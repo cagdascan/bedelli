@@ -1,0 +1,15 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "jquery": {}
+    },
+    "packages": {
+      "jquery": {
+        "git": "https://github.com/nrafter/meteor-jquery.git",
+        "tag": "v2.0.31",
+        "commit": "3edf878d51e6f03eff70e1a7a969a19f42b6f1a1"
+      }
+    }
+  }
+}

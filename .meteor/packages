@@ -5,7 +5,8 @@
 
 meteor-platform
 mizzao:bootstrap-3
-tsega:bootstrap3-datetimepicker
 accounts-facebook
-mrt:accounts-ui-bootstrap-dropdown
+tsega:bootstrap3-datetimepicker
+accounts-password
+ian:accounts-ui-bootstrap-3
 

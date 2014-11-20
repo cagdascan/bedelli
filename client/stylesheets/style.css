@@ -1,6 +1,6 @@
 body {
 
-	background-color: #78866B;
+  background-color: #78866B;
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
   background-size: 50px 50px;
   font-family:Arial; 
@@ -14,11 +14,20 @@ nav {
 /*JS ile devamlı değişecek, carousel gibi
 */
 
+.datetimepicker {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input-group-addon {
+	border:none;
+	padding: 0px;
+}
 
 .ustobje {
-	display: none;
 	border:1px;
-	background-image: url('img/bedelli.jpg');
+	background-image: url('/img/bedelli.jpg');
 	background-size: cover;
 	background-position: center;
 	border-radius:20px;
@@ -81,7 +90,7 @@ nav {
           left:74%;
         }
 
-        .ustobje {
+        /*.ustobje {
         	display: inline;
-        }
+        }*/
     }

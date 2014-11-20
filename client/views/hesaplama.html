@@ -5,7 +5,14 @@
   </h1>
   <form name="bedelForm" onChange="bedelHesap()">
     <p>
-      Dogum Tarihi:<input type="text" class="datepicker" name="dateText" >
+      Dogum Tarihi:
+      
+      <div class="input-group datetimepicker">
+        <span class="input-group-addon">
+          <input class="set-due-date form-control" data-date-format="DD/MM/YYYY" type="text"/>
+        </span>
+      </div>
+
     </p>
   </form>
   <h3 style="color:blue">
@@ -15,3 +22,5 @@
   </h3>
   </div>
 </template>
+
+<!-- <i class="glyphicon glyphicon-calendar"></i> -->
