@@ -25,7 +25,6 @@ Template.hesaplama.rendered = function() {
 
         }
 
-        console.log(bedelliYasiTarihi);
 
 
 

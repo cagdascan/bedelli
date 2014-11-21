@@ -1,14 +1,14 @@
-// Session.setDefault('sessionBedelliDurumu',true);
+//Session.setDefault('sessionBedelliDurumu',true);
 
 Template.bedellidurum.helpers({
 	'sessionBedelliDurumu': function(){
-		var bd = degerler.findOne().bedelliDurumu;
+		var bdd = Degerler.findOne().bedelliDurumu;
 
-		if(bd==0){
+		if(bdd==0){
 	Session.set('sessionBedelliDurumu',true);
 	return Session.get('sessionBedelliDurumu');
 	}
-	else if(bd==1){
+	else if(bdd==1){
 		Session.set('sessionBedelliDurumu',false);
 	return Session.get('sessionBedelliDurumu');
 	}
