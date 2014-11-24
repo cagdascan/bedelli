@@ -25,9 +25,6 @@ Template.hesaplama.rendered = function() {
 
         }
 
-
-
-
     	if ((bedelliYasiTarihi[2]-yil>0)) {
     		$('#durum').html('Bedelli Tuttu! :)');
 			$('#durum').css('color','green');

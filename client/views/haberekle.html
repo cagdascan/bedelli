@@ -1,0 +1,39 @@
+<template name="haberekle">
+	<div class="col-md-9 haber">
+		<div class="row">
+			<div class="col-md-3 tarihekle" >
+
+				Gazete Adı:			
+				<select id="gazeteadi" >
+					<option value="hurriyet">Hürriyet</option>
+					<option value="milliyet">Milliyet</option>
+					<option value="radikal">Radikal</option>
+					<option value="cumhuriyet">Cumhuriyet</option>
+				</select>
+
+				<div style="padding:5px;"></div>
+				Tarih:
+				<div class="input-group datetimepicker2">
+					<span class="input-group-addon">
+						<input name="habertarihi" class="set-due-date form-control" data-date-format="DD/MM/YYYY" type="text" style="padding:none; height:20px;"/>
+					</span>
+				</div>
+
+			</div>
+			<div class="col-md-9">
+				<div class="baslik">
+					<input name="haberbasligi" id="haberbasligi" type="text" placeholder="Başlık" style="height:100%; width:100%;"/>
+				</div>
+				<div style="padding:5px;"></div>
+				<div>
+					<textarea id="habericerik" name="habericerik" style="height:100%; width:100%; box-sizing: border-box;" placeholder="Haberin ilk paragrafını giriniz..." ></textarea>
+
+					<input name="haberlinki" id="haberlinki" type="text" placeholder="http://haber-linki.com" style="height:100%; width:100%;"/>
+				</div>
+				<input type="submit" value="Ekle" class="habersubmit">
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-9 separate2"></div>
+</template>
