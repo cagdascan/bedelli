@@ -1,5 +1,6 @@
 <template name="haber">
 	{{#each listele}}
+	{{#if confirmedOrNot}}
 	<div class="col-md-9 haber">
 		<div class="row">	
 			<div class="col-md-3 tarih" style="margin-top: 50px;">
@@ -22,5 +23,6 @@
 		</div>
 		</div>
 	<div class="col-md-9 separate2"></div>
+	{{/if}}
 	{{/each}}
 </template>
