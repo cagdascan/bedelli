@@ -2,7 +2,7 @@
 	{{> ustmenu}}
 	<div class="container">
 		<div class="row">
-			<div >
+			<div>
 				{{#if sessionUstobje}}
 					{{> ustobje}}
 				{{else}}
@@ -17,8 +17,13 @@
 
 		<div class="col-md-9 separate2"></div>
 
-		<div class="row">	
-			{{> haberekle}}
+		<div class="row">
+			{{#if currentUser}}
+				{{#if sessionHaberEkle}}
+					{{> haberekle}}
+				{{/if}}
+			{{/if}}
+
 			{{> haber}}
 		</div>
 	</div>

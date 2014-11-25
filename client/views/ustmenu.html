@@ -20,27 +20,18 @@
 	  <span class="navbar-brand" >&nbsp;&nbsp;&nbsp; </span>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav menucuk">
-        <li id="menucukHaberler" class="active"><a href="#" id="haberler">Haberler <span class="sr-only">(current)</span></a></li>
-<!--         <li><a href="istatistikler.php">İstatistikler</a></li>
- -->	  <li id="menucukHesaplama"><a href="#" id="hesaplama">Bedelli Hesaplama</a></li>
-<!-- 			    <li><a href="sss.php">Sıkça Sorulan Sorular</a></li>
- -->        
+        <li id="menucukHaberler" class="active"><a href="#" id="haberler">Haberler <span class="sr-only">(current)</span></a></li> 
+
+        <li id="menucukHesaplama"><a href="#" id="hesaplama">Bedelli Hesaplama</a></li>
+        {{#if currentUser}}
+        <li id="menucukHaberEkle"><a href="#" id="haberekleme">Haber Ekle</a></li>
+        {{/if}}     
       </ul>      
       <ul class="nav navbar-nav navbar-right">
          {{> loginButtons}}
-        
-       <!--  <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ugunebakan <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Haber Ekle</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Kullanıcı Bilgileri</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Çıkış</a></li> -->
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

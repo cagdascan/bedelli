@@ -10,12 +10,13 @@ Meteor.methods({
 			tarih: tarihVar,
 			numericTime: sortTime,
 			createdAt: new Date(),
+			userIdsi: this.userId,
 
 		}, function (err, result) {
       if (err)
         console.log('An error has occured: ' + err);
       else
-        console.log('Eklendi');
+        console.log('Haber eklendi');
     });
 	}
 });

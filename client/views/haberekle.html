@@ -1,10 +1,17 @@
 <template name="haberekle">
-	<div class="col-md-9 haber">
+		<div class="col-md-9 haber">
+			<div class="row">
+			<div class="col-md-3"><h3 style="margin-top: 0px;">Haber Ekle:</h3></div>
+			<div class="col-md-9" id="haberekleuyari"></div>
+			</div>
+			
 		<div class="row">
+
 			<div class="col-md-3 tarihekle" >
 
 				Gazete Adı:			
 				<select id="gazeteadi" >
+					<option value="empty">---</option>
 					<option value="hurriyet">Hürriyet</option>
 					<option value="milliyet">Milliyet</option>
 					<option value="radikal">Radikal</option>
@@ -12,7 +19,7 @@
 				</select>
 
 				<div style="padding:5px;"></div>
-				Tarih:
+				Haber Tarihi:
 				<div class="input-group datetimepicker2">
 					<span class="input-group-addon">
 						<input name="habertarihi" class="set-due-date form-control" data-date-format="DD/MM/YYYY" type="text" style="padding:none; height:20px;"/>
@@ -36,4 +43,5 @@
 	</div>
 
 	<div class="col-md-9 separate2"></div>
+	
 </template>

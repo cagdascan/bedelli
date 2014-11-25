@@ -33,6 +33,12 @@ nav {
 /*JS ile devamlı değişecek, carousel gibi
 */
 
+/*#icerikclass {
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}*/
+
 .datetimepicker {
 	width: 50%;
 	margin-left: auto;

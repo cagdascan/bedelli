@@ -3,20 +3,16 @@
 	{{#if confirmedOrNot}}
 	<div class="col-md-9 haber">
 		<div class="row">	
-			<div class="col-md-3 tarih" style="margin-top: 50px;">
-				<a href="http://www.hurriyet.com.tr"><img src="http://www.hurriyet.com.tr/p/2014/hurriyet-logo.png"></a>
+			<div class="col-md-3 tarih">
+				<a href="http://'{{haberLinkim}}'" target="_blank"><img src="http://www.hurriyet.com.tr/p/2014/hurriyet-logo.png"></a>
 				<br>{{tarih}}
 			</div>
 			<div class="col-md-9">
 				<div class="baslik">
-					<a href="http://'{{haberLinkim}}'" target="_blank">
 					{{haberBasligi}}
-					</a>
 				</div>
 				<div>
-					<a href="http://{{haberLinkim}}" target="_blank">
-					{{haberIcerigi}}
-					</a>
+					<p id="icerikclass">{{haberIcerigi}}</p>
 				</div>
 			</div>
 			
