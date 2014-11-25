@@ -5,11 +5,8 @@ src: url('/fonts/OSP-DIN.ttf');
 
 body {
 
-/*  background-color: #78866B;
-  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
-  background-size: 50px 50px;*/
-
-  background: url('/img/bg4.jpg') no-repeat center center fixed; 
+  /*background: url('/img/bg4.jpg') no-repeat center center fixed; */
+  background-color: #0489B1;
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
@@ -25,19 +22,6 @@ body {
 nav {
 	position: fixed;
 }
-
-/*#bs-example-navbar-collapse-1 ,nav, .navbar-header, .container-fluid ,.collapse , .navbar-collapse, .navbar , .navbar-brand{
-	background-color: rgba(255,255,255,0.1);
-}*/
-
-/*JS ile devamlı değişecek, carousel gibi
-*/
-
-/*#icerikclass {
-	white-space: nowrap;
-	overflow: hidden;
-    text-overflow: ellipsis;
-}*/
 
 .datetimepicker {
 	width: 50%;
