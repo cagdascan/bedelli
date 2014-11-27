@@ -1,8 +1,6 @@
  <template name="bedellidurum">
   <div class="bedellidurum col-md-3">
-
-
-
+    {{#if currentUser}}
   {{#if sessionBedelliDurumu}}
   <h3 style="color:red">
     Bedelli Durumu
@@ -51,6 +49,9 @@
       <th>{{kesinUcret}}</th>
     </tr>
   </table>
+  {{/if}}
+  {{else}}
+  {{> signupForm}}
   {{/if}}
   
 
