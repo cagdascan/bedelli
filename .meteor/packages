@@ -11,4 +11,6 @@ accounts-password
 accounts-ui-bootstrap-3
 houston:admin
 iron:router
+http
+meteorhacks:fast-render
 

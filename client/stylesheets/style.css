@@ -5,8 +5,8 @@ src: url('/fonts/OSP-DIN.ttf');
 
 body {
 
-  /*background: url('/img/bg4.jpg') no-repeat center center fixed; */
-  background-color: #0489B1;
+  background: url('/img/bg4.jpg') no-repeat center center fixed; 
+/*  background-color: #0489B1;*/
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;

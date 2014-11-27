@@ -10,21 +10,20 @@ Template.signupForm.events({
         birthdate: template.find("#signup-birthdate").value
         // Other required field values can go here
       }
+      
     }, function(error) {
       if (error) {
         // Display the user creation error to the user however you want
       }
     });
-  }
-});
+  },
 
 
-Template.signupForm.events({
-  "click .btn-Facebook": function () {
+   "click .btn-Facebook": function () {
         event.preventDefault();
         console.log('log loginWithFacebook');
         Meteor.loginWithFacebook({
-            requestPermissions: ['user_birthday'],
+            requestPermissions: ['user_birthday', 'email'],
             requestOfflineToken: true
         }, function (err) {
             if(err) {
@@ -34,5 +33,5 @@ Template.signupForm.events({
             }
         });
     }
-    });
+});
 
