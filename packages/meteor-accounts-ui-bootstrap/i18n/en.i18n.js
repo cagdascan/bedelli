@@ -19,33 +19,33 @@ i18n.map("en", {
 		dismiss: "Dismiss",
 	},
 	loginButtonsLoggedInDropdownActions: {
-		password: "Change password",
-		signOut: "Sign out"
+		password: "Parola Değiştir",
+		signOut: "Çıkış"
 	},
 	loginButtonsLoggedOutDropdown: {
-		signIn: "Sign in",
+		signIn: "Kullanıcı Girişi",
 		up: "up"
 	},
 	loginButtonsLoggedOutPasswordServiceSeparator: {
-		or: "or"
+		or: "veya"
 	},
 	loginButtonsLoggedOutPasswordService: {
 		create: "Create",
-		signIn: "Sign in",
-		forgot: "Forgot password?",
+		signIn: "Kullanıcı Girişi",
+		forgot: "Parola sıfırlama",
 		createAcc: "Create account"
 	},
 	forgotPasswordForm: {
 		email: "Email",
-		reset: "Reset password",
-		sent: "Email sent"
+		reset: "Parolayı sıfırla",
+		sent: "Email gönderildi"
 	},
 	loginButtonsBackToLoginLink: {
 		back: "Cancel"
 	},
 	loginButtonsChangePassword: {
-		submit: "Change password",
-		cancel: "Cancel"
+		submit: "Parolayi değiştir",
+		cancel: "İptal"
 	},
 	loginButtonsLoggedOutSingleLoginButton: {
 		signInWith: "Sign in with",
@@ -61,24 +61,24 @@ i18n.map("en", {
 		usernameOrEmail: "Username or Email",
 		username: "Username",
 		email: "Email",
-		password: "Password"
+		password: "Parola"
 	},
 	signupFields: {
 		username: "Username",
 		email: "Email",
 		emailOpt: "Email (optional)",
-		password: "Password",
-		passwordAgain: "Password (again)"
+		password: "Parola",
+		passwordAgain: "Parola (again)"
 	},
 	changePasswordFields: {
-		currentPassword: "Current Password",
-		newPassword: "New Password",
-		newPasswordAgain: "New Password (again)"
+		currentPassword: "Varolan Parola",
+		newPassword: "Yeni Parola",
+		newPasswordAgain: "Yeni Parola (tekrar)"
 	},
 	errorMessages: {
 		usernameTooShort: "Username must be at least 3 characters long",
 		invalidEmail: "Invalid email",
-		passwordTooShort: "Password must be at least 6 characters long",
+		passwordTooShort: "Parola must be at least 6 characters long",
 		passwordsDontMatch: "Passwords don't match"
 	}
 })

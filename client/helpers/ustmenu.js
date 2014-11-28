@@ -1,5 +1,6 @@
 Template.ustmenu.helpers({
 	'evetHayir': function(){
+		if (Degerler.findOne() != undefined) {
 		var bd = Degerler.findOne().bedelliDurumu;
 		if(bd==1){
 			Session.set('evetHayir',true);
@@ -11,5 +12,6 @@ Template.ustmenu.helpers({
 
 		}
 		} 
+	}		
 
 });

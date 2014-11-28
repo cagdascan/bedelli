@@ -46,11 +46,7 @@ Template.haberekle.events({
 
 			Meteor.setTimeout(function(){
 				Meteor.call('haberEkle',haberbasligiVar, gazeteadiVar, habericerikVar, haberLinkVar, tarihVar, sortTime);
-				Session.set('sessionUstobje',true);
-				Session.set('sessionHaberEkle',false);
-				$('#menucukHaberler').addClass('active');
-				$('#menucukHesaplama').removeClass('active');
-				$('#menucukHaberEkle').removeClass('active');
+				Session.set('sessionHaberekle',false);
 			}, 3000);			
 		}
 	},

@@ -1,26 +1,69 @@
 @font-face {
-font-family: OSPDIN;
-src: url('/fonts/OSP-DIN.ttf');
+    font-family: myFirstFont;
+    src: url('fonts/Capture_it_2.ttf');
 }
 
 body {
 
-  background: url('/img/bg4.jpg') no-repeat center center fixed; 
-/*  background-color: #0489B1;*/
+  background: url('/img/bg5.jpg') no-repeat center center fixed; 
   -webkit-background-size: auto 100%;
   -moz-background-size: 100%;
   -o-background-size: auto 100%;
-  background-size: auto 100%;
+  background-size: cover;
+  font-family: verdana, sans-serif;
 
+}
 
-  font-family: Arial, sans-serif;
-  padding-top: 70px;
+.topbackdiv{
+	background: url('/img/bg4.jpg') no-repeat;
+	background-position: center center;
+	background-size: cover;
+	margin-right: 15px;
+	margin-top:15px;
+	margin-left: 15px;
+	border-radius: 20px 20px 0px 0px;
+	font-family: myFirstFont;
+	color: #5C3317;
 }
 
 
+@media all and (min-width: 300px) and (max-width: 799px) {  .topbackdiv  { font-size:2.0em; text-align: center; } }
+@media all and (min-width: 400px) and (max-width: 799px) {  .topbackdiv  { font-size:2.5em; text-align: center; } }
+@media all and (min-width: 500px) and (max-width: 799px) {  .topbackdiv  { font-size:3.0em; text-align: center; } }
+@media all and (min-width: 600px) and (max-width: 799px) {  .topbackdiv  { font-size:3.5em; text-align: center; } }
+@media all and (min-width: 700px) and (max-width: 799px) {  .topbackdiv  { font-size:4.0em; text-align: center;  } }
+@media all and (min-width: 800px)  {  .topbackdiv  { font-size:4.5em; padding-left: 30px;  } }
+@media all and (min-width: 900px)  {  .topbackdiv  { font-size:5.0em; padding-left: 30px;  } }
+@media all and (min-width: 1000px) {  .topbackdiv  { font-size:5.5em; padding-left: 30px;  } }
+@media all and (min-width: 1100px) {  .topbackdiv  { font-size:6em; padding-left: 30px;    } }
+@media all and (min-width: 1200px) {  .topbackdiv  { font-size:6.5em; padding-left: 30px;  } }
 
-nav {
-	position: fixed;
+
+.bottombackdiv{
+	background-color: rgba(255,255,255,0.2);
+	margin-right: 15px;
+	margin-top:0px;
+	margin-left: 15px;
+	border-radius:0px 0px 20px 20px ;
+	padding-bottom: 20px;
+	margin-bottom: 100px;
+}
+.leftcol{
+	 
+}
+
+.rightcol{
+}
+
+/*hesaplama*/
+.hesaplama {
+	border:1px;
+	text-align: center;
+	padding: 15px;
+	}
+.hesaplama > span {
+	color:white;
+	font-size: 20px;
 }
 
 .datetimepicker {
@@ -28,7 +71,196 @@ nav {
 	margin-left: auto;
 	margin-right: auto;
 }
+#durum{
+	background-color: rgba(0,0,0,0.4);
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius:50px;
+	display: inline-block;
+	color:gray;
+}
+/*hesaplama*/
 
+
+/*haber*/
+.haber {
+	font-family: arial;
+	padding:0px; 
+	border-radius:20px;
+}
+
+.tarih {
+	font-family: pt_sandbols;
+	font-size:15px;
+	font-weight: bold;
+	font-style: italic;
+	text-align:center; 
+}
+
+.baslik {
+	font-family: pt_sansbols;
+	font-size: 35px;
+	font-weight: normal;
+	text-align:left;
+	color:black;
+}
+/*haber*/
+
+
+/*bedellidurum*/
+.bedellidurum {
+	padding-bottom:10px;
+	text-align:center;
+	border-bottom: 1px solid;
+}
+@media (min-width: 848px){
+        .bedellidurum {
+          position: fixed;
+          left:72%;
+          top:5%;
+          border-bottom: none;
+          background-color: rgba(0,0,0,0.2);
+          border-radius: 15px;
+        }
+    }
+
+.merhaba{
+	margin: 0px;
+	color:white;
+	font-size: 20px;
+}
+.cikis {
+	background-color: rgba(0,0,0,0.4);
+	border-radius:50px;
+	font-size: 22px;
+}
+
+.cikisButon{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color:white;
+}
+/*bedellidurum*/
+
+
+/*signUpForm*/
+.signUpText, .signInText{
+	background-color: white;
+	border:none;
+	padding: none;
+	padding-left: 10px;
+	width: 100%;
+}
+.signUp{
+	margin: 0px;
+	color:white;
+	font-size: 20px;
+	padding-bottom: 5px;
+
+}
+
+.uyeGirisi, .uyeOl {
+	cursor: pointer;
+}
+
+.signUpEmail2{
+	border-radius: 10px 10px 0px 0px;
+
+}
+.signUpDate{
+	border-radius: 0px 0px 10px 10px;
+}
+
+.signInEmail2{
+	border-radius: 10px 10px 0px 0px;
+
+}
+.signInPass{
+	border-radius: 0px 0px 10px 10px;
+}
+
+.giris, .kaydol{
+	background-color: rgba(0,0,0,0.4);
+	border-radius:50px;
+	font-size: 22px;
+	margin-top:10px;
+}
+
+.girisButon, .kaydolButon{
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1px;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color:white;
+}
+
+.kullanicihatasi{
+	color:white;
+}
+/*signUpForm*/
+
+/*signInForm*/
+
+
+
+/*signInForm*/
+
+
+
+.haberEkleSw{
+	margin-top: 5px;
+	color:#33CC33;
+	background-color: rgba(0,0,0,0.4);
+	border-radius:50px;
+	font-size: 15px;
+	padding:10px;
+	text-align: center;
+	cursor:pointer;
+	font-weight: bolder;
+}
+
+.separate{
+	padding-top: 20px;
+}
+
+.separate2{
+	padding-top: 30px;
+}
+
+.separate4{
+	padding-top: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#login-buttons {
+    display: none;
+}
+nav {
+	position: fixed;
+}
 .input-group-addon {
 	border:none;
 	padding: 0px;
@@ -36,71 +268,9 @@ nav {
 
 .ustobje {
 	border:1px;
-	background-image: url('/img/bedelli.jpg');
+	background-image: url('/img/bg4.jpg');
 	background-size: cover;
 	background-position: center;
 	/*border-radius:20px;*/
 	height: 250px;
 }
-
-.hesaplama {
-	background-color: rgba(255,255,255,0.6);
-	border:1px;
-	/*background-image: url('img/bedelli.jpg');*/
-	background-size: cover;
-	background-position: center;
-	/*border-radius:20px;*/
-	/*height: 250px;*/
-	text-align: center;
-	padding: 15px;
-	}
-
-.separate{
-	padding-top: 20px;
-}
-
-.separate2{
-	padding-top: 40px;
-}
-
-.bedellidurum {
-	/*background-color:#e7e7e7;*/
-	background-color: rgba(255,255,255,0.2);
-	padding-bottom:25px; 
-	/*border-radius:20px;*/
-	text-align:center;
-
-}
-
-.haber {
-	background-color: rgba(255,255,255,0.6);
-	padding:10px; 
-	/*border-radius:20px;*/
-}
-
-.tarih {
-	font-family: pt_sandbols;
-	font-size:15;
-	font-weight: bold;
-	color:gray;
-	text-align:center; 
-}
-
-.baslik {
-	font-family: pt_sansbols;
-	font-size: 30px;
-	font-weight: normal;
-	text-align:left;
-	color:black;
-}
-
-@media (min-width: 768px){
-        .bedellidurum {
-          position: fixed;
-          left:74%;
-        }
-
-        /*.ustobje {
-        	display: inline;
-        }*/
-    }

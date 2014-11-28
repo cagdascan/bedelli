@@ -1,13 +1,15 @@
 <template name="haber">
+	<div class="col-md-12 separate2"></div>
 	{{#each listele}}
 	{{#if confirmedOrNot}}
-	<div class="col-md-9 haber">
+	
+	<div class="col-md-12 haber">
 		<div class="row">	
-			<div class="col-md-3 tarih">
-				<a href="{{haberLinki}}" target="_blank"><img src="img/gazetelogo/{{gazeteAdi}}.png" style="width:200px; height:50px;"></a>
+			<div class="col-md-4 tarih">
+				<a href="{{haberLinki}}" target="_blank"><img src="img/gazetelogo/{{gazeteAdi}}.png" style="max-width:100%;height:auto;"></a>
 				<br>{{tarih}}
 			</div>
-			<div class="col-md-9">
+			<div class="col-md-8">
 				<div class="baslik">
 					{{haberBasligi}}
 				</div>
@@ -18,7 +20,7 @@
 			
 		</div>
 		</div>
-	<div class="col-md-9 separate2"></div>
+		<div class="col-md-12 separate2"></div>
 	{{/if}}
 	{{/each}}
 </template>

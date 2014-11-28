@@ -1,37 +1,77 @@
 <template name="signupForm">
+  {{#if sessionSignUpForm}}
   <form id="signup-form">
-    <h2>Üye Ol</h2>
+    <div class="signUp">
+    <span class="uyeGirisi">Üye Girişi </span> / <span class="uyeOl">Üye Ol</span>
+    </div>
 
 <table style="width:100%;">
 
     <tr>
       <th>Email:</th>
-      <th><input type="text" id="signup-email" placeholder="Email" /></th>
+      <th><input class="signUpEmail2 signUpText" type="text" id="signup-email" placeholder="Email" /></th>
     </tr>
 
     <tr>
       <th>Şifre:</th>
-      <th><input type="password" id="signup-password" placeholder="Şifre" /></th>
+      <th><input class="signUpPass signUpText" type="password" id="signup-password" placeholder="Şifre" /></th>
     </tr>
 
     <tr>
       <th>İsim:</th>
-      <th><input type="text" id="signup-name" placeholder="İsim" /></th>
+      <th><input class="signUpName signUpText" type="text" id="signup-name" placeholder="İsim" /></th>
     </tr>
     <tr>
       <th>Soyad:</th>
-      <th><input type="text" id="signup-surname" placeholder="Soyad" /></th>
+      <th><input class="signUpSur signUpText" type="text" id="signup-surname" placeholder="Soyad" /></th>
     </tr>
     <tr>
-      <th>Doğum Tarihi:</th>
-      <th><input type="text" id="signup-birthdate" placeholder="Doğum Tarihi" /></th>
+      <th>Doğumgünü:</th>
+      <th><input type="text" class="datetimepicker3 signUpDate signUpText" data-date-format="DD/MM/YYYY" id="signup-birthdate" placeholder="Doğum Tarihi" /></th>
     </tr>
-    <tr> 
-    <th></th>     
-      <th><button type="submit">Kaydol</button></th>
+    </table>
+  </form>
+      
+<div class="kaydol">
+    <button class="kaydolButon">
+      <span>Kaydol</span>
+      <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span>
+    </button>
+</div>
+  
+<button class="login-button btn btn-block btn-Facebook" style="margin-top:7px;">Facebook ile bağlan</button>
+<div class="kullanicihatasi"></div>
+{{else}}
+
+<div class="signin-form">
+  <div class="signUp">
+    <span class="uyeGirisi">Üye Girişi </span> / <span class="uyeOl">Üye Ol</span>
+  </div>
+  <table style="width:100%;">
+    <tr>
+      <th>Email:</th>
+      <th>
+        <input class="signInEmail2 signInText" type="text" id="signin-email" placeholder="Email" />
+      </th>
+    </tr>
+
+    <tr>
+      <th>Şifre:</th>
+      <th>
+        <input class="signInPass signInText" type="password" id="signin-password" placeholder="Şifre" />
+      </th>
     </tr>
   </table>
-  </form>
-  <br>
-<button class="login-button btn btn-block btn-Facebook">Sign in with Facebook</button>
+
+  <div class="giris">
+    <button class="girisButon">
+      <span>Giriş</span>
+      <span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
+    </button>
+  </div>
+  
+  <div class="kullanicihatasi"></div>
+
+</div>
+{{/if}}
 </template>

@@ -42,7 +42,9 @@
 <!--            -->
 <template name="_loginButtonsLoggedOutDropdown">
 	<li id="login-dropdown-list" class="dropdown">
-		<a class="dropdown-toggle"  data-toggle="dropdown">{{i18n 'loginButtonsLoggedOutDropdown.signIn'}}{{#unless forbidClientAccountCreation}} / {{i18n 'loginButtonsLoggedOutDropdown.up'}}{{/unless}} <b class="caret"></b></a>
+		<a class="dropdown-toggle"  data-toggle="dropdown">
+			{{i18n 'loginButtonsLoggedOutDropdown.signIn'}}
+			<b class="caret"></b></a>
 		<div class="dropdown-menu">
 			{{> _loginButtonsLoggedOutAllServices}}
 		</div>
@@ -68,7 +70,7 @@
 <template name="_loginButtonsLoggedOutPasswordServiceSeparator">
 	<div class="or">
 		<span class="hline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-		<span class="or-text">{{i18n 'loginButtonsLoggedOutPasswordServiceSeparator.or'}}</span>
+		<span class="or-text">veya </span><span class="or-text"> Kullanıcı Girişi</span>
 		<span class="hline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 	</div>
 </template>
@@ -89,12 +91,9 @@
 			{{/if}}
 		</button>
 		{{#if inLoginFlow}}
-			<div id="login-other-options">
+			<div id="login-other-options" >
 			{{#if showForgotPasswordLink}}
 				<a id="forgot-password-link" class="pull-left" >{{i18n 'loginButtonsLoggedOutPasswordService.forgot'}}</a>
-			{{/if}}
-			{{#if showCreateAccountLink}}
-				<a id="signup-link" class="pull-right" >{{i18n 'loginButtonsLoggedOutPasswordService.createAcc'}}</a>
 			{{/if}}
 			</div>
 		{{/if}}

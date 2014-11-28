@@ -31,21 +31,22 @@ Meteor.startup(function () {
 Accounts.onCreateUser(function(options, user) {
   if(user && user.services.facebook){
   var result;
-  if (options.profile) {
-    user.profile = options.profile;
-    result = Meteor.http.get("https://graph.facebook.com/me", {
-      params: {
-        access_token: user.services.facebook.accessToken
+    if (options.profile) {
+      user.profile = options.profile;
+      result = Meteor.http.get("https://graph.facebook.com/me", {
+        params: {
+          access_token: user.services.facebook.accessToken
+        }
+      });
+      if (!result.error && result.data) {
+        user.profile.birthday = result.data.birthday;
+        user.profile.name = result.data.first_name;
+        user.profile.surname = result.data.last_name;
       }
-    });
-    if (!result.error && result.data) {
-      user.profile.birthday = result.data.birthday;
     }
   }
-  }
-
   else {
     user.profile = options.profile;
   }
   return user;
-  });
+});

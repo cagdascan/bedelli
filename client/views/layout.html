@@ -1,30 +1,31 @@
 <template name="layout">
-	{{> ustmenu}}
-	<div class="container">
+	<div class="topbackdiv">
+		Bedelli Askerlik
+	</div>
+	<div class="bottombackdiv">
+		{{> bedellidurum}}
 		<div class="row">
-			<div>
-				{{#if sessionUstobje}}
-					{{> ustobje}}
-				{{else}}
-					{{> hesaplama}}
+			<div class="col-md-4 leftcol" >
+				{{> hesaplama}}
+			</div>
+			<div class="col-md-8 rightcol">
+				 {{#if currentUser}}
+				<div class="col-md-4 haberEkleSw">
+				<span><span class="glyphicon glyphicon-plus" aria-hidden="true"> 
+				</span>&nbsp; Haber Ekle</span>
+				</div>
 				{{/if}}
-			</div>
 
-			<div class="col-md-3">
-				{{> bedellidurum}}
-			</div>
-		</div>
+				<div class="col-md-8">
 
-		<div class="col-md-9 separate2"></div>
+				</div>
 
-		<div class="row">
-			{{#if currentUser}}
-				{{#if sessionHaberEkle}}
+				{{#if sessionHaberekle}}
 					{{> haberekle}}
 				{{/if}}
-			{{/if}}
 
-			{{> haber}}
+				{{> haber}}
+			</div>
 		</div>
 	</div>
 </template>

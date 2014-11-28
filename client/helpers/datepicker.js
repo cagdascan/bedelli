@@ -27,20 +27,20 @@ Template.hesaplama.rendered = function() {
 
     	if ((bedelliYasiTarihi[2]-yil>0)) {
     		$('#durum').html('Bedelli Tuttu! :)');
-			$('#durum').css('color','green');
+			$('#durum').css('color','gray');
     	}
     	else if(bedelliYasiTarihi[2]-yil==0 && bedelliYasiTarihi[1]-ay>0){
 			$('#durum').html('Bedelli Tuttu! :)');
-			$('#durum').css('color','green');
+			$('#durum').css('color','gray');
 		}
 		else if(bedelliYasiTarihi[2]-yil==0 && bedelliYasiTarihi[1]-ay==0 && bedelliYasiTarihi[0]-gun>=0){
 			
 			$('#durum').html('Bedelli Tuttu! :)');
-			$('#durum').css('color','green');
+			$('#durum').css('color','gray');
 		}
 		else {
 			$('#durum').html('Bedelli Tutmadı :(');
-			$('#durum').css('color','red');
+			$('#durum').css('color','gray');
 
 		}
     });

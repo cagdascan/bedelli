@@ -2,9 +2,11 @@
   <div class="bedellidurum col-md-3">
     {{#if currentUser}}
   {{#if sessionBedelliDurumu}}
-  <h3 style="color:red">
-    Bedelli Durumu
-  </h3>
+  <div class="merhaba">
+  <span>
+    Merhaba {{kullaniciAdi}} 
+  </span>
+  </div>
   <table style="width:100%;">
     <tr>
       <th>Bedelli çıktı mı?</th>
@@ -25,10 +27,21 @@
       <th>{{tahminiUcret}}</th>
     </tr>
   </table>
+
+  <div class="cikis">
+    <button class="cikisButon">
+      <span>Çıkış</span>
+      <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+    </button>
+  </div>
+
   {{else}}
-  <h3 style="color:green">
-    Bedelli Durumu
-  </h3>
+  <div class="merhaba">
+  <span>
+    Merhaba {{kullaniciAdi}} 
+  </span>
+  </div>
+
   <table style="width:100%;">
     <tr>
       <th>Bedelli çıktı mı?</th>
@@ -49,6 +62,14 @@
       <th>{{kesinUcret}}</th>
     </tr>
   </table>
+
+    <div class="cikis">
+    <button class="cikisButon">
+      <span>Çıkış</span>
+      <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+    </button>
+  </div>
+
   {{/if}}
   {{else}}
   {{> signupForm}}

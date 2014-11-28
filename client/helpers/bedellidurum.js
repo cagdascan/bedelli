@@ -2,6 +2,7 @@
 
 Template.bedellidurum.helpers({
 	'sessionBedelliDurumu': function(){
+		if (Degerler.findOne() != undefined) {
 		var bdd = Degerler.findOne().bedelliDurumu;
 
 		if(bdd==0){
@@ -13,43 +14,50 @@ Template.bedellidurum.helpers({
 	return Session.get('sessionBedelliDurumu');
 	}
 }
-});
-
-Template.bedellidurum.helpers({
+},
 	'tahminiCikisTarihi': function(){
 		return Degerler.findOne().tahminiCikisTarihi;
-	}});
-
-Template.bedellidurum.helpers({
+	},
 	'tahminiUcret': function(){
 		return Degerler.findOne().tahminiUcret;
-	}});
-
-Template.bedellidurum.helpers({
+	},
 	'tahminiYas': function(){
 		var dogumtarihi = Degerler.findOne().tahminiDogumTarihi;
 		var dogumyiliVal = dogumtarihi.split('/');
 		return 2014 - dogumyiliVal[2];
-	}});
-
-//////////
-
-Template.bedellidurum.helpers({
+	},
+	
 	'kesinUcret': function(){
+		if (Degerler.findOne() != undefined) {
 		return Degerler.findOne().kesinUcret;
-	}});
-
-Template.bedellidurum.helpers({
+	}
+	},
+	
 	'kesindogumtarihi': function(){
+		if (Degerler.findOne() != undefined) {
 		var dogumtarihi = Degerler.findOne().kesinDogumTarihi;
 		return dogumtarihi;
-	}});
-
-Template.bedellidurum.helpers({
+	}
+	},
+	
 	'kesinYas': function(){
+		if (Degerler.findOne() != undefined) {
 		var dogumtarihi = Degerler.findOne().kesinDogumTarihi;
 		var dogumyiliVal = dogumtarihi.split('/');
 		return 2014 - dogumyiliVal[2];
-	}});
+	}
+	},
 
+	'kullaniciAdi':function(){
+		if(Meteor.user){
+			return Meteor.user().profile.name;
+		}
+	}
+});
+
+Template.bedellidurum.events({
+		'click .cikis': function() {
+			Meteor.logout();
+		}
+	});
 
