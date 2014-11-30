@@ -17,9 +17,9 @@ Template.haberekle.events({
 
 		var haberLinkVar = document.getElementById("haberlinki").value;
 
-		var ayVar= $('.datetimepicker2').data("DateTimePicker").viewDate._i.M + 1;
-		var gunVar= $('.datetimepicker2').data("DateTimePicker").viewDate._i.d;
-    	var yilVar= $('.datetimepicker2').data("DateTimePicker").viewDate._i.y;
+		var ayVar= $('.datetimepicker2').data("DateTimePicker").date._i.M + 1;
+		var gunVar= $('.datetimepicker2').data("DateTimePicker").date._i.d;
+    	var yilVar= $('.datetimepicker2').data("DateTimePicker").date._i.y;
 
     	var tempNew = (ayVar + "/" + gunVar + "/" + yilVar);
 		var sortTime = new Date(tempNew).getTime(); //numeric date

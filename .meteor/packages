@@ -13,4 +13,5 @@ houston:admin
 iron:router
 http
 meteorhacks:fast-render
+natestrauser:analyticsjs
 
